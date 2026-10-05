@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Picpay do Lumian</title>
+    <style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    background-color: #0b110e; 
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+
+.eulogin {
+    background-color: #111a16; 
+    border: 1px solid #1c2c25;
+    padding: 40px 30px;
+    border-radius: 16px;
+    width: 100%;
+    max-width: 420px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+
+.areas {
+    text-align: center;
+    margin-bottom: 24px;
+}
+
+.eulogo {
+    font-size: 32px;
+    font-weight: 700;
+    color: #11c76f; 
+    letter-spacing: -1px;
+}
+
+h2 {
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 6px;
+    text-align: center;
+}
+
+.titulo2 {
+    font-size: 14px;
+    color: #9ca3af;
+    text-align: center;
+    margin-bottom: 32px;
+}
+
+
+.formaeulogin {
+    display: flex;
+    flex-direction: column;
+}
+
+.grupoeulogin {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.grupoeulogin label {
+    font-size: 13px;
+    font-weight: 500;
+    color: #9ca3af;
+    margin-bottom: 8px;
+}
+
+.grupoeulogin input {
+    background-color: #1c2c25;
+    border: 1px solid #2d443a;
+    color: #ffffff;
+    padding: 14px 16px;
+    border-radius: 10px;
+    font-size: 15px;
+    outline: none;
+    transition: all 0.2s ease;
+}
+
+.grupoeulogin input:focus {
+    border-color: #11c76f;
+    box-shadow: 0 0 0 3px rgba(17, 199, 111, 0.15);
+}
+
+
+.esqueceusanidade {
+    text-align: right;
+    margin-bottom: 24px;
+}
+
+.esqueceusanidade a {
+    font-size: 13px;
+    color: #11c76f;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.esqueceusanidade a:hover {
+    text-decoration: underline;
+}
+
+
+.btn-submit {
+    background-color: #11c76f;
+    color: #000000; 
+    border: none;
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+.btn-submit:hover {
+    background-color: #0fa65d;
+}
+
+.btn-submit:active {
+    transform: scale(0.98);
+}
+
+
+.lumianfooter {
+    margin-top: 32px;
+    text-align: center;
+    font-size: 14px;
+    color: #9ca3af;
+}
+
+.lumianfooter a {
+    color: #11c76f;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.lumianfooter a:hover {
+    text-decoration: underline;
+}
+
+    </style>
+</head>
+<body>
+    <div class="eulogin">
+        <div class="areas">
+            <span class="eulogo">picpay</span>
+        </div>
+
+        <h2>Acessar a sua conta do banco</h2>
+        <p class="titulo2">Inserir os seus dados para continuar</p>
+
+        <form class="formaeulogin">
+            <div class="grupoeulogin">
+                <label for="username">seu CPF e o seu E-mail</label>
+                <input type="text" id="username" placeholder="digitar o seu CPF ou e-mail" required autocomplete="username">
+            </div>
+
+            <div class="grupoeulogin">
+                <label for="password">Sua senha</label>
+                <input type="password" id="password" placeholder="digite a sua senha" required autocomplete="current-password">                
+            </div>
+
+            <div class="esqueceusanidade">
+                <a href="#">Dunn Smith</a>
+            </div>
+
+            <button type="submit" class="btn-submit">Entrar</button>
+        </form>
+        
+        <div class="lumianfooter">
+            <p>Não tem sequencia? Clique para garantir a sua sequencia <a href="#" class="pegar-sequencia">Criar sequencia</a></p>
+        </div>
+    </div>
+</body>
+</html>
